@@ -464,37 +464,131 @@ section {
 /*--------------------------------------------------------------
 # Akills
 --------------------------------------------------------------*/
-.skills .progress {
-  height: 60px;
-  display: block;
-  background: none;
-  border-radius: 0;
+.skill .icon-box {
+  text-align: center;
+  padding: 70px 20px 80px 20px;
+  transition: all ease-in-out 0.3s;
+  background: #fff;
+  padding: 0px 100px 0px 150px;
 }
 
-.skills .progress .skill {
-  padding: 10px 0;
-  margin: 0;
-  text-transform: uppercase;
-  display: block;
+.skill .icon-box .icon {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: ease-in-out 0.3s;
+  position: relative;
+}
+
+.skill .icon-box .icon i {
+  font-size: 50px;
+  transition: 0.5s;
+  position: relative;
+
+
+}
+
+.skill .icon-box .icon svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.skill .icon-box .icon svg path {
+  transition: 0.5s;
+  fill: #f5f5f5;
+}
+
+.skill .icon-box h4 {
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  margin: 10px 0 15px 0;
+  font-size: 22px;
+}
+
+.skill .icon-box h4 a {
   color: #45505b;
+  transition: ease-in-out 0.3s;
 }
 
-.skills .progress .skill .val {
-  float: right;
-  font-style: normal;
+.skill .icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
 }
 
-.skills .progress-bar-wrap {
-  background: #f2f3f5;
+.skill .iconbox-blue i {
+  color: #47aeff;
 }
 
-.skills .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: .9s;
-  background-color: #0563bb;
+.skill .iconbox-blue:hover .icon i {
+  color: #fff;
+}
+
+.skill .iconbox-blue:hover .icon path {
+  fill: #47aeff;
+}
+
+.skill .iconbox-orange i {
+  color: #ffa76e;
+}
+
+.skill .iconbox-orange:hover .icon i {
+  color: #fff;
+}
+
+.skill .iconbox-orange:hover .icon path {
+  fill: #ffa76e;
+}
+
+.skill .iconbox-pink i {
+  color: #e80368;
+}
+
+.skill .iconbox-pink:hover .icon i {
+  color: #fff;
+}
+
+.skill .iconbox-pink:hover .icon path {
+  fill: #e80368;
+}
+
+.skill .iconbox-yellow i {
+  color: #ffbb2c;
+}
+
+.skill .iconbox-yellow:hover .icon i {
+  color: #fff;
+}
+
+.skill .iconbox-yellow:hover .icon path {
+  fill: #ffbb2c;
+}
+
+.skill .iconbox-red i {
+  color: #ff5828;
+}
+
+.skill .iconbox-red:hover .icon i {
+  color: #fff;
+}
+
+.skill .iconbox-red:hover .icon path {
+  fill: #ff5828;
+}
+
+.skill .iconbox-teal i {
+  color: #11dbcf;
+}
+
+.skill .iconbox-teal:hover .icon i {
+  color: #fff;
+}
+
+.skill .iconbox-teal:hover .icon path {
+  fill: #11dbcf;
 }
 
 /*--------------------------------------------------------------
@@ -529,6 +623,14 @@ section {
   font-size: 16px;
   background: #f7f8f9;
   padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item h6{
+	font-size: 16px;
+  padding: 1px 1px;
   display: inline-block;
   font-weight: 600;
   margin-bottom: 10px;
@@ -778,7 +880,12 @@ section {
 .portfolio-details .portfolio-description p {
   padding: 0;
 }
-
+.portofolio .icon-box {
+  text-align: center;
+  transition: all ease-in-out 0.3s;
+  background: #fff;
+  box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.05);
+}
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
@@ -873,7 +980,7 @@ section {
 }
 
 .services .iconbox-pink:hover .icon path {
-  fill: #e80368;
+  fill: #000000;
 }
 
 .services .iconbox-yellow i {
@@ -885,7 +992,7 @@ section {
 }
 
 .services .iconbox-yellow:hover .icon path {
-  fill: #ffbb2c;
+  fill: #faff96;
 }
 
 .services .iconbox-red i {
@@ -909,7 +1016,7 @@ section {
 }
 
 .services .iconbox-teal:hover .icon path {
-  fill: #11dbcf;
+  fill: #9cfffd;
 }
 
 /*--------------------------------------------------------------
@@ -993,7 +1100,7 @@ section {
 # Contact
 --------------------------------------------------------------*/
 .contact .info {
-  width: 100%;
+  
   background: #fff;
 }
 
@@ -1021,13 +1128,15 @@ section {
 
 .contact .info p {
   padding: 0 0 0 60px;
+  Width: 200px;
   margin-bottom: 0;
   font-size: 14px;
   color: #728394;
 }
 
-.contact .info .email, .contact .info .phone {
-  margin-top: 40px;
+.contact .info .adress,.contact .info .email {
+  margin: 0px;
+  padding: 0px 350px;
 }
 
 .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
